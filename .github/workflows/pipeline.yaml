@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
 env:
-  PROJECT: mkdevyoutube
+  PROJECT: gcp-tutorials
 
 jobs:
   build:
