@@ -10,7 +10,7 @@ steps:
   - --source=.
   - --entry-point=melby.demo.gcp.functions.HelloWorld
   - --trigger-http
-  - --runtime=Java11
+  - --runtime=java17
   - --memory=512MB
   - --timeout=540
   - --allow-unauthenticated
