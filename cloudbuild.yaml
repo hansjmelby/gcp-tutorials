@@ -21,7 +21,7 @@ steps:
   - deploy
   - java-bucket-listener
   - --gen2
-  - --region=us-central1
+  - --region=europe-north1
   - --source=.
   - --entry-point=melby.demo.gcp.functions.BucketEventListener
   - --trigger-bucket=melby-casa-prod-analyze-eu
