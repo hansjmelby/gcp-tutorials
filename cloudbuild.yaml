@@ -1,0 +1,16 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - java-http-function
+  - --gen2
+  - --region=us-central1
+  - --source=.
+  - --entry-point=melby.demo.gcp.functions.HelloWorld
+  - --trigger-http
+  - --runtime=Java11
+  - --memory=512MB
+  - --timeout=540
+  - --allow-unauthenticated
