@@ -14,3 +14,18 @@ steps:
   - --memory=512MB
   - --timeout=540
   - --allow-unauthenticated
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - java-bucket-listener
+  - --gen2
+  - --region=us-central1
+  - --source=.
+  - --entry-point=melby.demo.gcp.functions.BucketEventListener
+  - --trigger-bucket=melby-casa-prod-analyze-eu
+  - --runtime=java17
+  - --memory=512MB
+  - --timeout=540
+  - --allow-unauthenticated
